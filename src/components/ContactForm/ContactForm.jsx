@@ -5,8 +5,8 @@ import '@pnotify/core/dist/BrightTheme.css';
 import '@pnotify/core/dist/PNotify.css';
 import { error, notice } from '@pnotify/core';
 import { defaults } from '@pnotify/core';
-import { addContacts } from '../../redux/phoneBook-actions';
-import { getContacts } from '../../redux/phoneBook-selector';
+import { addContacts } from '../../redux';
+import { getContacts } from '../../redux';
 import s from './ContactForm.module.css';
 
 defaults.delay = 3000;
