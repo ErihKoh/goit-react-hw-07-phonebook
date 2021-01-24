@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import s from './ContactList.module.css';
 import ContactEl from '../ContactEl';
 import IconBatton from '../IconButton';
-import { deleteContacts } from '../../redux/actions';
-import { getVisibleContacts } from '../../redux/selector';
+import { deleteContacts } from '../../redux/phoneBook-actions';
+import { getVisibleContacts } from '../../redux/phoneBook-selector';
 import { ReactComponent as DelIcon } from '../../icons/delete.svg';
 
 export default function ContactList() {
