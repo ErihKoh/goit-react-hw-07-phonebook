@@ -1,2 +1,2 @@
 export * from './phoneBook-actions';
-export * from './phoneBook-selector';
+export * from './phoneBook-selectors';
