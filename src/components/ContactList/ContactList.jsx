@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import s from './ContactList.module.css';
 import ContactEl from '../ContactEl';
 import IconBatton from '../IconButton';
-import { deleteContacts } from '../../redux';
+import { deleteContact } from '../../redux';
 import { getVisibleContacts } from '../../redux';
 import { ReactComponent as DelIcon } from '../../icons/delete.svg';
 
@@ -11,7 +11,7 @@ export default function ContactList() {
   const contacts = useSelector(getVisibleContacts);
   const dispatch = useDispatch();
 
-  const onDeleteContact = id => dispatch(deleteContacts(id));
+  const onDeleteContact = id => dispatch(deleteContact(id));
 
   return (
     <ul className={s.list}>

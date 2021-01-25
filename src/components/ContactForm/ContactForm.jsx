@@ -22,12 +22,14 @@ export default function ContactForm() {
     e.preventDefault();
 
     if (name === '') {
+      reset();
       return error({
         title: 'Error',
         text: 'Please eneter name!',
       });
     }
     if (number === '') {
+      reset();
       return error({
         title: 'Error',
         text: 'Please eneter number!',
