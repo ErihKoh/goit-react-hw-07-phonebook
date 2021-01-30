@@ -5,7 +5,7 @@ import '@pnotify/core/dist/BrightTheme.css';
 import '@pnotify/core/dist/PNotify.css';
 import { error, notice } from '@pnotify/core';
 import { defaults } from '@pnotify/core';
-import { addContacts } from '../../redux';
+import { addContact } from '../../redux';
 import { getContacts } from '../../redux';
 import s from './ContactForm.module.css';
 
@@ -40,7 +40,7 @@ export default function ContactForm() {
     console.log(contacts);
 
     if (!findContact) {
-      dispatch(addContacts({ name, number }));
+      dispatch(addContact({ name, number }));
       reset();
       return;
     }
